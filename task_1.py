@@ -31,10 +31,7 @@ class ExtendedCase(Case):
     def print_test_case_info(self):
         super().print_test_case_info()
 
-        print(
-            f"Предусловие: {self.precondition}"
-            f"\nОкружение: {self.environment}"
-        )
+        print(f"Предусловие: {self.precondition}\nОкружение: {self.environment}")
 
 
 case = ExtendedCase(
