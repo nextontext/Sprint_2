@@ -3,7 +3,7 @@ class Movies:
         self.movies = []
 
     def add_movie(self, movie):
-        self.movies = self.movies.append(movie)
+        self.movies.append(movie)
 
 
 class Comedy(Movies):
@@ -11,7 +11,7 @@ class Comedy(Movies):
         super().__init__()
 
     def add_movie(self, movie):
-        self.movies.append(movie)
+        super().add_movie(movie)
         return f"Комедии: {self.movies}"
 
 
@@ -20,7 +20,7 @@ class Drama(Movies):
         super().__init__()
 
     def add_movie(self, movie):
-        self.movies.append(movie)
+        super().add_movie(movie)
         return f"Драма: {self.movies}"
 
 
