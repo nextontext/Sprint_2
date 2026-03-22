@@ -22,7 +22,7 @@ class EmployeeSalary:
         cls.hourly_payment = value
 
     def salary(self):
-        return self.hours * EmployeeSalary.hourly_payment
+        return self.hours * self.hourly_payment
 
 
 employee_1 = EmployeeSalary.get_hours("Tonny", 3)
